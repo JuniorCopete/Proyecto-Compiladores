@@ -1,0 +1,15 @@
+#hola{
+		background: #DEDEFB;
+		overflow-y: auto;
+		
+		height: 500px;
+			}
+
+#hola::-webkit-scrollbar {
+	width: 7px;
+}
+
+#hola::-webkit-scrollbar-thumb {
+	background: #2F3F4B;
+	border-radius: 5px;
+}

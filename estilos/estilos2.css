@@ -1,0 +1,16 @@
+#dif{
+		overflow: auto;
+
+		height: 500px;
+
+}
+
+
+#dif::-webkit-scrollbar {
+	width: 7px;
+}
+
+#dif::-webkit-scrollbar-thumb {
+	background: #83ADCD;
+	border-radius: 5px;
+}

@@ -13,20 +13,23 @@
 	<div class="collapse navbar-collapse" id="navbarCollapse">
 			<ul class="navbar-nav me-auto mb-2 mb-md-0">
 				<li class="nav-item">
-					<a class="nav-link <?php if($pagina == "inicio"){echo("active");} ?>" aria-current="page" href="<?php if($pagina == "h" || $pagina == "registrar"){echo("../index.php");} if($pagina == "inicio"){echo("#");} ?>">Inicio</a>
+					<a class="nav-link <?php if($pagina == "inicio"){echo("active");} ?>" aria-current="page" href="<?php if($pagina == "h" || $pagina == "registrar"){echo("../");} if($pagina == "inicio"){echo("#");} ?>">Inicio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link <?php if($pagina == "h"){echo("active");} ?>" href="<?php if($pagina == "inicio"){echo("./paginas/horario.php");} if($pagina == "registrar"){echo("../paginas/horario.php");} if($pagina == "h"){echo("#");} ?>">Horarios</a>
+					<a class="nav-link <?php if($pagina == "h"){echo("active");} ?>" href="<?php if($pagina == "inicio"){echo("./paginas/horario");} if($pagina == "registrar"){echo("../paginas/horario");} if($pagina == "h"){echo("#");} ?>">Horarios</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link <?php if($pagina == "registrar"){echo("active");} ?>" href="<?php if($pagina == "h"){echo("../paginas/registrar.php");}  if($pagina == "inicio" ){echo("./paginas/registrar.php");} if($pagina == "registrar"){echo("#");} ?>">Registrarse</a>
+					<a class="nav-link <?php if($pagina == "registrar"){echo("active");} ?>" href="<?php if($pagina == "h"){echo("../paginas/registrar");}  if($pagina == "inicio" ){echo("./paginas/registrar");} if($pagina == "registrar"){echo("#");} ?>">Registrarse</a>
 				</li>
 			</ul>
-		<form class="d-flex" role="search">
-			<input class="form-control" type="text" placeholder="Usuario" required=""><p></p>
-			<input class="form-control" type="password" placeholder="contraseña" required="">
-			<button class="btn btn-outline-success" type="submit">Ingresar</button>
-		</form>
+			<?php if ($pagina== "inicio") {
+				echo '	<form class="d-flex" role="search" method="post" method="#">
+			<input class="form-control" name="usuario" type="text" placeholder="Usuario" required=""><p></p>
+			<input class="form-control" name="contraseña" type="password" placeholder="contraseña" required="">
+			<button class="btn btn-outline-success" name="ingresar" type="submit">Ingresar</button>
+		</form>';
+			} ?>
+
 	</div>
 </div>
 </nav>

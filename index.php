@@ -1,4 +1,4 @@
-<?php 
+<?php  session_start();
 $pagina = "inicio";
 include 'componentes/cabeza.php';?>
 <br><br>
@@ -22,6 +22,5 @@ include 'componentes/cabeza.php';?>
 </div>
 </div>
 </div>
-
-</body>
 <?php include 'componentes/pie.php';?>
+</body>

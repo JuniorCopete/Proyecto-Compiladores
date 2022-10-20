@@ -8,5 +8,7 @@ include '../componentes/cabeza.php';?>
 		<br>	
 <h1><?php if($pagina == "h"){echo 'No hay nada aún';}  ?></h1>
 
-</body>
+
 <?php include '../componentes/pie.php';?>
+</body>
+
